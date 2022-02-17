@@ -43,6 +43,15 @@ class TodoDeleteFragment: Fragment() {
         setupObserver()
     }
 
+    override fun onPause() {
+        super.onPause()
+        cancelRequest()
+    }
+
+    private fun cancelRequest() {
+        vm.cancelRequest()
+    }
+
     private fun setupView() {
         setupNormalView()
         setupSuccessView()

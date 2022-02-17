@@ -39,6 +39,15 @@ class TodoCreateFragment: Fragment() {
         _binding = null
     }
 
+    override fun onPause() {
+        super.onPause()
+        cancelRequest()
+    }
+
+    private fun cancelRequest() {
+        vm.cancelRequest()
+    }
+
     private fun setup() {
         setupView()
         setupObservers()

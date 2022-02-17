@@ -47,6 +47,10 @@ class TodoDetailViewModel: ViewModel() {
 
     }
 
+    fun cancelRequest() {
+        disposable.clear()
+    }
+
 }
 
 sealed class TodoDetailState(val ordinal: Int) {

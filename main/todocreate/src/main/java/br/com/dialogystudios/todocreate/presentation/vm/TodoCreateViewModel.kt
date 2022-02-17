@@ -8,6 +8,7 @@ import br.com.dialogystudios.base.data.repository.TodoRepository
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.kotlin.addTo
+import io.reactivex.rxjava3.kotlin.subscribeBy
 import io.reactivex.rxjava3.schedulers.Schedulers
 
 class TodoCreateViewModel: ViewModel() {
@@ -30,15 +31,25 @@ class TodoCreateViewModel: ViewModel() {
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .doOnSubscribe { _state.postValue(TodoCreateState.Loading) }
-            .doOnSuccess { _state.postValue(TodoCreateState.Success(it.id)) }
-            .doOnError { _state.postValue(TodoCreateState.Error(it)) }
-            .subscribe()
+            .subscribeBy(
+                {
+                    _state.postValue(TodoCreateState.Error(it))
+                },
+                {
+                    _state.postValue(TodoCreateState.Success(it.id))
+                }
+            )
             .addTo(disposable)
     }
 
     fun reset() {
         _state.postValue(TodoCreateState.Normal)
         _todo.value = Todo("", "", System.nanoTime())
+        disposable.clear()
+    }
+
+    fun cancelRequest() {
+        _state.postValue(TodoCreateState.Normal)
         disposable.clear()
     }
 }

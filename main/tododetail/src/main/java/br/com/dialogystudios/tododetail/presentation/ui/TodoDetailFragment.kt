@@ -26,7 +26,6 @@ class TodoDetailFragment: Fragment() {
         super.onCreateView(inflater, container, savedInstanceState)
         _binding = TodoDetailFragment2Binding.inflate(layoutInflater)
         setup()
-        loadData()
         return binding.root
     }
 
@@ -37,6 +36,16 @@ class TodoDetailFragment: Fragment() {
 
     override fun onStart() {
         super.onStart()
+        loadData()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        cancelRequest()
+    }
+
+    private fun cancelRequest() {
+        vm.cancelRequest()
     }
 
     private fun loadData() {

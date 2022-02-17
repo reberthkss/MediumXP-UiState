@@ -31,6 +31,11 @@ class TodoUpdateFragment: Fragment() {
         return binding.root
     }
 
+    override fun onPause() {
+        super.onPause()
+        vm.cancelRequest()
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

@@ -33,6 +33,15 @@ class TodoListFragment: Fragment() {
         return binding.root
     }
 
+    override fun onPause() {
+        super.onPause()
+        cancelRequest()
+    }
+
+    private fun cancelRequest() {
+        vm.cancelRequest()
+    }
+
     override fun onStart() {
         super.onStart()
         setupOnStart()
