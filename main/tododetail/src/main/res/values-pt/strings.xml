@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="get_todo_detail_error">Erro ao carregar a tarefa</string>
+    <string name="retry_txt_btn">Tentar novamente</string>
+    <string name="go_back_btn">Voltar</string>
+    <string name="delete_msg">Deletar</string>
+    <string name="update_msg">Atualizar</string>
+    <string name="toolbar_detail_title">Detalhes</string>
+</resources>

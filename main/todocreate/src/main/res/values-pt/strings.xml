@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="next">Proximo</string>
+    <string name="enter_description">Digite aqui a descrição da tarefa</string>
+    <string name="enter_todo_title">Digite aqui o titulo da tarefa</string>
+    <string name="create_todo_error">Erro ao criar a tarefa</string>
+    <string name="go_back">Voltar</string>
+    <string name="retry">Tentar Novamente</string>
+    <string name="new_todo">Nova tarefa</string>
+    <string name="successfully_created_todo">Criado todo com sucesso</string>
+    <string name="go_to_home">Voltar para inicio</string>
+    <string name="todo_title">Titulo</string>
+    <string name="todo_description">Descrição</string>
+    <string name="toolbar_create_title">Criar tarefa</string>
+</resources>

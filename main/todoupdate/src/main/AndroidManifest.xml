@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.dialogystudios.todoupdate" >
+
+    <application>
+        <activity
+            android:name=".TodoUpdateActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.ToDoMedium1.NoActionBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:scheme="mediumxp"
+                    android:host="todo-update"
+                    />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

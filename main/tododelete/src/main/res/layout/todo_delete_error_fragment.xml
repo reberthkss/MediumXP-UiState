@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/todo_delete_error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/todo_error_delete"
+        android:textSize="32sp"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:id="@+id/retry_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/todo_delete_error_msg"
+        android:text="@string/retry"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/go_to_home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/retry_btn"
+        android:text="@string/to_home"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

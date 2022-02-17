@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/todo_delete_graph"
+    app:startDestination="@id/todoDeleteFragment">
+    <fragment
+        android:id="@+id/todoDeleteFragment"
+        android:name="br.com.dialogystudios.tododelete.presentation.ui.TodoDeleteFragment"
+        android:label="TodoDeleteFragment" />
+</navigation>

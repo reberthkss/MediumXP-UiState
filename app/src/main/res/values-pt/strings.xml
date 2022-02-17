@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ToDo-Medium1</string>
+    <string name="create">Criar</string>
+    <string name="error_on_save_txt">Oops! Houve um erro ao salvar.</string>
+    <string name="go_back">Voltar</string>
+    <string name="created_todo_successfully">Criado todo com sucesso!</string>
+    <string name="create_todo_error">Erro ao criar um ToDo.</string>
+</resources>

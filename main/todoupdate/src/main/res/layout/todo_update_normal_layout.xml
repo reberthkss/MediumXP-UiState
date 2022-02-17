@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextView
+            android:id="@+id/todo_update_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/todo_update_message"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/todo_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title"
+            android:layout_below="@id/todo_update_msg"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/todo_title_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/todo_description_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title"
+            android:layout_below="@id/todo_title_layout"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/todo_description_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_btn"
+            android:layout_below="@id/todo_description_layout"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+</layout>

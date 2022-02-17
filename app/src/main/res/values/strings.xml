@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ToDo-Medium1</string>
+    <string name="create">Create</string>
+    <string name="error_on_save_txt">Oops! There\'s an error on save.</string>
+    <string name="go_back">Go back</string>
+    <string name="created_todo_successfully">Your todo was successfully created!</string>
+    <string name="create_todo_error">Error on create todo!</string>
+</resources>

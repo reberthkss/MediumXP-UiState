@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">Titulo</string>
+    <string name="description">Descrição</string>
+    <string name="save_btn">Salvar</string>
+    <string name="todo_update_message">Atualizar a tarefa irá alterar os dados</string>
+    <string name="todo_update_success_message">Tarefa atualizada com sucesso</string>
+    <string name="edit_again">Editar novamente</string>
+    <string name="to_home">Voltar para início</string>
+    <string name="todo_update_error_msg">Houve um erro ao atualziar a tarefa</string>
+    <string name="retry">Retry</string>
+    <string name="go_back">Voltar</string>
+    <string name="toolbar_update_title">Atualizar Tarefa</string>
+</resources>

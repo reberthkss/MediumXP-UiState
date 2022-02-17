@@ -1,0 +1,5 @@
+<resources>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="toolbar_list_title">Todo list</string>
+</resources>

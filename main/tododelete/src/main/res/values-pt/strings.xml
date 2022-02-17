@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="todo_delete_message">Essa ação vai remover a tarefa.</string>
+    <string name="confirm">Confirmar</string>
+    <string name="go_back">Voltar</string>
+    <string name="todo_success_delete">Tarefa foi removido com sucesso</string>
+    <string name="to_home">Voltar ao incio</string>
+    <string name="todo_error_delete">Um erro ocorreu ao tentar deletar a tarefa</string>
+    <string name="retry">Tentar novamente</string>
+    <string name="toolbar_delete_title">Apagar tarefa</string>
+</resources>

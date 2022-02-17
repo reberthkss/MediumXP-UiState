@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="todo_delete_message">This action will remove the todo.</string>
+    <string name="confirm">Confirm</string>
+    <string name="go_back">Go back</string>
+    <string name="todo_success_delete">Todo was successfully removed</string>
+    <string name="to_home">Go to home</string>
+    <string name="todo_error_delete">An error occurred on todo delete</string>
+    <string name="retry">Retry</string>
+    <string name="toolbar_delete_title">Delete todo</string>
+</resources>

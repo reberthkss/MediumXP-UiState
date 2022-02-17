@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/todo_update_success_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="@string/todo_update_success_message"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/edit_again_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/todo_update_success_msg"
+        android:layout_centerHorizontal="true"
+        android:text="@string/edit_again"
+        />
+
+    <Button
+        android:id="@+id/to_home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_again_btn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/go_back"
+        />
+
+</RelativeLayout>

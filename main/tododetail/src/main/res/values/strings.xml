@@ -1,0 +1,8 @@
+<resources>
+    <string name="get_todo_detail_error">Error on get todo detail</string>
+    <string name="retry_txt_btn">Retry</string>
+    <string name="go_back_btn">Go back</string>
+    <string name="delete_msg">Delete</string>
+    <string name="update_msg">Update</string>
+    <string name="toolbar_detail_title">Details</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include android:id="@+id/success" layout="@layout/todo_list_success_fragment" />
+        <include android:id="@+id/error" layout="@layout/todo_list_error_fragment" />
+        <include android:id="@+id/loading" layout="@layout/todo_list_loading_fragment" />
+    </ViewFlipper>
+</layout>

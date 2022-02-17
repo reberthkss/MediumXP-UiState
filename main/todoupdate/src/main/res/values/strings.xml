@@ -1,0 +1,13 @@
+<resources>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="save_btn">Save</string>
+    <string name="todo_update_message">Update todo will change the values</string>
+    <string name="todo_update_success_message">Todo updated successfully</string>
+    <string name="edit_again">Edit again</string>
+    <string name="to_home">Go to home</string>
+    <string name="todo_update_error_msg">An error occurred on updating todo</string>
+    <string name="retry">Retry</string>
+    <string name="go_back">Go Back</string>
+    <string name="toolbar_update_title">Update todo</string>
+</resources>

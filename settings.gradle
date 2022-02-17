@@ -1,0 +1,22 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://jitpack.io'
+        }
+
+    }
+}
+rootProject.name = "ToDo-Medium1"
+include ':app'
+include ':main'
+include ':main:base'
+include ':main:todolist'
+include ':main:tododetail'
+include ':main:tododelete'
+include ':main:todocreate'
+include ':extension'
+include ':main:todoupdate'
+include ':themes'

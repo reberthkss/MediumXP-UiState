@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/todo_list_graph">
+
+    <include app:graph="@navigation/todo_create_graph" />
+    <include app:graph="@navigation/todo_list_graph" />
+    <include app:graph="@navigation/todo_detail_graph" />
+    <include app:graph="@navigation/todo_delete_graph" />
+</navigation>

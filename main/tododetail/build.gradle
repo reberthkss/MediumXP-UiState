@@ -1,0 +1,33 @@
+apply from: "$rootProject.projectDir/shared.gradle"
+apply plugin: 'kotlin-android'
+
+dependencies {
+
+    implementation project(":main:base")
+    implementation project(":themes")
+
+    //android
+    implementation android_deps.values()
+
+    // firebase
+    implementation platform(firebase_bom.bom)
+    implementation firebase_deps.values()
+
+    // rx
+    implementation rx_deps.values()
+
+    // material design
+    implementation material_design_deps.values()
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+
+//    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+
+
+    testImplementation 'junit:junit:4.+'
+    testImplementation "androidx.arch.core:core-testing:$arch_version"
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}

@@ -1,0 +1,95 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.google.gms.google-services'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+android {
+    compileSdkVersion rootProject.ext.compile_sdk_version
+    buildToolsVersion rootProject.ext.build_tools_version
+
+    defaultConfig {
+        applicationId "br.com.dialogystudios.todo_medium1"
+        minSdkVersion rootProject.ext.min_sdk_version
+        targetSdkVersion rootProject.ext.target_sdk_version
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments << [
+                        "room.schemaLocation": "$projectDir/schemas".toString(),
+                        "room.incremental": "true",
+                        "room.expandProjection": "true"
+                ]
+            }
+        }
+
+        repositories {
+            google()
+            mavenCentral()
+
+        }
+
+        kotlinOptions {
+            jvmTarget = '1.8'
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += "src/main/kotlin"
+        test.java.srcDirs += "src/test/kotlin"
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+}
+
+dependencies {
+    // modules
+
+    implementation project(":main:base")
+    implementation project(":main:todocreate")
+    implementation project(":main:tododelete")
+    implementation project(":main:tododetail")
+    implementation project(":main:todolist")
+    implementation project(":main:todoupdate")
+
+
+    //android
+    implementation android_deps.values()
+
+    // firebase
+    implementation platform(firebase_bom.bom)
+    implementation firebase_deps.values()
+
+    // rx
+    implementation rx_deps.values()
+
+    // material design
+    implementation material_design_deps.values()
+
+//    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+
+
+    testImplementation 'junit:junit:4.+'
+    testImplementation "androidx.arch.core:core-testing:$arch_version"
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}

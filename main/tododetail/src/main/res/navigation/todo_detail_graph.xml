@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/todo_detail_graph"
+    app:startDestination="@id/todoDetailFragment2">
+
+    <fragment
+        android:id="@+id/todoDetailFragment2"
+        android:name="br.com.dialogystudios.tododetail.presentation.ui.TodoDetailFragment"
+        android:label="TodoDetailFragment" />
+</navigation>
